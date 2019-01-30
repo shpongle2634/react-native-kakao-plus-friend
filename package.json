@@ -1,0 +1,22 @@
+{
+  "name": "react-native-kakao-plus-friend",
+  "version": "1.0.0",
+  "description": "React-Native Module for Kakao PlusFriend ",
+  "main": "index.js",
+  "keywords": [
+    "react-native",
+    "react-native-kakao",
+    "react-native-kakao-plus-friend",
+    "react-native-kakao-plusfriend",
+    "kakao",
+    "kakaoplus"
+  ],
+  "author": {
+    "name": "Seo Taehoon",
+    "url": "https://github.com/shpongle2634"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "react-native": "^0.41.2"
+  }
+}
