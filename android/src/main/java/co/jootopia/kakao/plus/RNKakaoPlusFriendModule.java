@@ -29,7 +29,7 @@ public class RNKakaoPlusFriendModule extends ReactContextBaseJavaModule {
     try {
       PlusFriendService.getInstance().addFriend(this.getCurrentActivity(), plusFriendId);
       WritableMap response = Arguments.createMap();
-      response.putString("success","true");
+      response.putString("success", "true");
       promise.resolve(response);
     } catch (KakaoException e) {
       // 에러 처리 (앱키 미설정 등등)
@@ -42,9 +42,8 @@ public class RNKakaoPlusFriendModule extends ReactContextBaseJavaModule {
     try {
       PlusFriendService.getInstance().chat(this.getCurrentActivity(), plusFriendId);
       WritableMap response = Arguments.createMap();
-      response.putString("success","true");
+      response.putString("success", "true");
       promise.resolve(response);
-
     } catch (KakaoException e) {
       // 에러 처리 (앱키 미설정 등등)
       promise.reject(e.getCause());
