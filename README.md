@@ -29,8 +29,8 @@ react-native link 를 이용하시면 빠른 설치가 가능합니다.
 
 #### Android
 
-1. Open up `android/app/src/main/java/[...]/MainActivity.java`
-  - Add `import com.reactlibrary.RNKakaoPlusFriendPackage;` to the imports at the top of the file
+1. Open up `android/app/src/main/java/[...]/MainApplication.java`
+  - Add `import co.jootopia.kakao.plus.RNKakaoPlusFriendPackage;` to the imports at the top of the file
   - Add `new RNKakaoPlusFriendPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
@@ -56,7 +56,7 @@ pod 'KakaoOpenSDK' 스펙에는 플러스친구를 사용하기위한 Framework�
 때문에 SDK를 받으셔서 개발중인 Xcode 프로젝트에 KakaoPlusFriend.framework 를 Frameworks Group 에 drag & drop 해주시기 바랍니다.
 
 SDK 설치가 완료되었다면, 카카오 플러스친구 공식가이드
-https://developers.kakao.com/docs/ios/plusfriend 를 참고하셔 설정을 ㅇ완료하시길 바랍니다.
+https://developers.kakao.com/docs/ios/plusfriend 를 참고하셔 설정을 완료하시길 바랍니다.
 
 #### Android
 
@@ -68,37 +68,20 @@ https://developers.kakao.com/docs/android/getting-started
 플러스 친구
 https://developers.kakao.com/docs/android/plusfriend 를 참고하시기 바랍니다.
 
-**Note** : 위 '카카오 공식 가이드-개발 환경 구성에
-/android/app/build.gradle 를 설정해주시는 부분이 있는데,
-플러스친구 설정은 나와있지 않습니다. 찾아본 결과 dependencies에
-아래와 같이 추가해주셔야 합니다.
-
-```
-/android/app/build.gradle
-
-dependencies {
-    ...
-
-    // 카카오 플러스친구 sdk를 사용하기 위해 필요.
-    compile group: 'com.kakao.sdk', name: 'plusfriend', version: project.KAKAO_SDK_VERSION
-
-}
-
-```
-
 ## Usage
 ```javascript
 import RNKakaoPlusFriend from 'react-native-kakao-plus-friend';
 
   //...RN CODE
 
-   //친구 추가 하기로 링크
-  addFriend= async ()=>{
-      await RNKakaoPlusFriend.addFriend('kakao plus friend code');
+  // 친구 추가 하기로 링크
+  addFriend = async () => {
+    const response = await RNKakaoPlusFriend.addFriend('kakao plus friend code');
   }
-  //바로 채팅하기로 링크
-  chat= async ()=>{
-      await RNKakaoPlusFriend.chat('kakao plus friend code');
+
+  // 바로 채팅하기로 링크
+  chat = async () => {
+    const response = await RNKakaoPlusFriend.chat('kakao plus friend code');
   }
 
   //...RN CODE
