@@ -108,3 +108,11 @@ import RNKakaoPlusFriend from 'react-native-kakao-plus-friend';
 **Note**: 참고로 안드로이드에서는 플러스 친구 링크를 연동하지 않는 편이 좋습니다.
 이 API는 카카오톡이 설치되어있지 않은 환경에서는 카카오톡 앱 설치 링크로 유도됩니다.
 따라서, 구글 플레이스토어 정책상 앱 설치 유도로 간주되어 앱 서비스가 정지되는 경우가 발생합니다. 위 사용에서 if(Platform.OS==='ios') 와 같은 조건문을 붙여 IOS 환경에서만 사용하시길 권장드립니다.
+
+### by kyungjoon.go (ios 연동시 하단의 애러부분 수정)
+[!] The `RNKakaoPlusFriend` pod failed to validate due to 1 error:
+    - ERROR | attributes: Missing required attribute `homepage`.
+    - WARN  | source: The version should be included in the Git tag.
+    - WARN  | description: The description is equal to the summary.
+
+
