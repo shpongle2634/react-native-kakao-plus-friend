@@ -122,4 +122,20 @@ import RNKakaoPlusFriend from 'react-native-kakao-plus-friend';
 
 - https://developers.kakao.com/docs/latest/ko/sdk-download/ios-v1
 
+### ios 에서 chat method 실행시 애러남..(해결방법 알려주3)
+
+- backend.js:32 Possible Unhandled Promise Rejection (id: 0):
+- TypeError: Cannot read property 'chat' of undefined
+- TypeError: Cannot read property 'chat' of undefined
+    at _callee$ (http://192.168.0.38:8081/index.bundle?platform=ios&dev=true&minify=false:191821:91)
+    at tryCatch (http://192.168.0.38:8081/index.bundle?platform=ios&dev=true&minify=false:1430:19)
+    at Generator.invoke [as _invoke] (http://192.168.0.38:8081/index.bundle?platform=ios&dev=true&minify=false:1603:24)
+    at Generator.next (http://192.168.0.38:8081/index.bundle?platform=ios&dev=true&minify=false:1473:23)
+    at tryCatch (http://192.168.0.38:8081/index.bundle?platform=ios&dev=true&minify=false:1430:19)
+    at invoke (http://192.168.0.38:8081/index.bundle?platform=ios&dev=true&minify=false:1503:22)
+    at http://192.168.0.38:8081/index.bundle?platform=ios&dev=true&minify=false:1533:13
+    at tryCallTwo (http://192.168.0.38:8081/index.bundle?platform=ios&dev=true&minify=false:27359:7)
+    at doResolve (http://192.168.0.38:8081/index.bundle?platform=ios&dev=true&minify=false:27523:15)
+    at new Promise (http://192.168.0.38:8081/index.bundle?platform=ios&dev=true&minify=false:27382:5)
+
 
