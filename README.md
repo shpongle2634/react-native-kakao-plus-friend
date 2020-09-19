@@ -111,6 +111,7 @@ import RNKakaoPlusFriend from 'react-native-kakao-plus-friend';
 
 ### by kyungjoon.go (ios 연동시 하단의 애러부분 수정)
 [!] The `RNKakaoPlusFriend` pod failed to validate due to 1 error:
+
     - ERROR | attributes: Missing required attribute `homepage`.
 
     - WARN  | source: The version should be included in the Git tag.
