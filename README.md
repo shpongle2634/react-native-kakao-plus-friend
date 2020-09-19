@@ -117,5 +117,9 @@ import RNKakaoPlusFriend from 'react-native-kakao-plus-friend';
     - WARN  | source: The version should be included in the Git tag.
 
     - WARN  | description: The description is equal to the summary.
+    
+### ios legacy sdk link
+
+- https://developers.kakao.com/docs/latest/ko/sdk-download/ios-v1
 
 
