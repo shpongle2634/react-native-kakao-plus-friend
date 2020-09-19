@@ -137,5 +137,13 @@ import RNKakaoPlusFriend from 'react-native-kakao-plus-friend';
     at tryCallTwo (http://192.168.0.38:8081/index.bundle?platform=ios&dev=true&minify=false:27359:7)
     at doResolve (http://192.168.0.38:8081/index.bundle?platform=ios&dev=true&minify=false:27523:15)
     at new Promise (http://192.168.0.38:8081/index.bundle?platform=ios&dev=true&minify=false:27382:5)
+   
+### android
+ /android/gradle.properties
+
+ KAKAO_SDK_GROUP=com.kakao.sdk
+ KAKAO_SDK_VERSION=1.30.2
+
+속성값 추가..필요
 
 
