@@ -146,4 +146,8 @@ import RNKakaoPlusFriend from 'react-native-kakao-plus-friend';
 
 속성값 추가..필요
 
+#### ios workaround (하단(링킹)과 같은 방법으로 연동가능) 
+ - let url=`http://pf.kakao.com/${kakaoChannelId}/chat`
+ - await Linking.openURL(url);
+
 
